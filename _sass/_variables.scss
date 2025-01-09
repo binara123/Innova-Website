@@ -1,0 +1,217 @@
+@import 'variables/typography', 'variables/colors', 'variables/spacing';
+
+/* typography */
+
+$font-family-header: $--font-family-header;
+$font-family-body: $--font-family-header;
+
+$line-height-header: $--line-height-md;
+$line-height-body: $--line-height-lg;
+
+$font-weight-header: $--font-weight-700;
+$font-weight-body: $--font-weight-400;
+
+$font-size-body: $--font-size-300;
+
+$font-size-h1: $--font-size-1000;
+$font-size-h2: $--font-size-900;
+$font-size-h3: $--font-size-800;
+$font-size-h4: $--font-size-700;
+$font-size-h5: $--font-size-600;
+$font-size-h6: $--font-size-500;
+
+$font-size-lg : $--font-size-400;
+$font-size-md : $--font-size-300;
+$font-size-sm : $--font-size-200;
+$font-size-xs : $--font-size-100;
+
+$font-weight-thin : $--font-weight-100;
+$font-weight-extra-light : $--font-weight-200;
+$font-weight-light : $--font-weight-300;
+$font-weight-regular : $--font-weight-400;
+$font-weight-medium : $--font-weight-500;
+$font-weight-bold : $--font-weight-700;
+$font-weight-extra-bold : $--font-weight-800;
+$font-weight-black : $--font-weight-900;
+
+/* colors*/
+$color-white: $--color-white;
+$color-black: $--color-black;
+
+$color-light: $--color-light;
+$color-dark: $--color-dark;
+
+/* -----------------------------------------------------------------
+Primary colors */
+
+$color-primary-extra-light: $--color-tangerine-0;
+$color-primary-lighter: $--color-tangerine-200;
+$color-primary-light: $--color-tangerine-300;
+$color-primary-light-medium: $--color-tangerine-400;
+$color-primary: $--color-tangerine-500;
+$color-primary-dark-medium: $--color-tangerine-600;
+$color-primary-dark: $--color-tangerine-700;
+$color-primary-darker: $--color-tangerine-800;
+$color-primary-darkest: $--color-tangerine-900;
+$color-primary-extra-dark: $--color-tangerine-1000;
+
+/* -----------------------------------------------------------------
+Warning colors */
+
+$color-warning-extra-light: $--color-merigold-100;
+$color-warning-lighter: $--color-merigold-200;
+$color-warning-light: $--color-merigold-300;
+$color-warning-light-medium: $--color-merigold-400;
+$color-warning: $--color-merigold-500;
+$color-warning-dark-medium: $--color-merigold-600;
+$color-warning-dark: $--color-merigold-700;
+$color-warning-darker: $--color-merigold-800;
+$color-warning-darkest: $--color-merigold-900;
+$color-warning-extra-dark: $--color-merigold-1000;
+
+/* -----------------------------------------------------------------
+Success colors */
+
+$color-success-extra-light: $--color-parakeet-100;
+$color-success-lighter: $--color-parakeet-200;
+$color-success-light: $--color-parakeet-300;
+$color-success-light-medium: $--color-parakeet-400;
+$color-success: $--color-parakeet-500;
+$color-success-dark-medium: $--color-parakeet-600;
+$color-success-dark: $--color-parakeet-700;
+$color-success-darker: $--color-parakeet-800;
+$color-success-darkest: $--color-parakeet-900;
+$color-success-extra-dark: $--color-parakeet-1000;
+
+/* -----------------------------------------------------------------
+Danger colors */
+
+$color-danger-extra-light: $--color-rose-100;
+$color-danger-lighter: $--color-rose-200;
+$color-danger-light: $--color-rose-300;
+$color-danger-light-medium: $--color-rose-400;
+$color-danger: $--color-rose-500;
+$color-danger-dark-medium: $--color-rose-600;
+$color-danger-dark: $--color-rose-700;
+$color-danger-darker: $--color-rose-800;
+$color-danger-darkest: $--color-rose-900;
+$color-danger-extra-dark: $--color-rose-1000;
+
+/* -----------------------------------------------------------------
+Informative colors */
+
+$color-info-extra-light: $--color-dogerblue-100;
+$color-info-lighter: $--color-dogerblue-200;
+$color-info-light: $--color-dogerblue-300;
+$color-info-light-medium: $--color-dogerblue-400;
+$color-info: $--color-dogerblue-500;
+$color-info-dark-medium: $--color-dogerblue-600;
+$color-info-dark: $--color-dogerblue-700;
+$color-info-darker: $--color-dogerblue-800;
+$color-info-darkest: $--color-dogerblue-900;
+$color-info-extra-dark: $--color-dogerblue-1000;
+
+/* -----------------------------------------------------------------
+Neutral colors */
+
+$color-neutral-extra-light: $--color-gray-100;
+$color-neutral-lighter: $--color-gray-200;
+$color-neutral-light: $--color-gray-300;
+$color-neutral-light-medium: $--color-gray-400;
+$color-neutral: $--color-gray-500;
+$color-neutral-dark-medium: $--color-gray-600;
+$color-neutral-dark: $--color-gray-700;
+$color-neutral-darker: $--color-gray-800;
+$color-neutral-darkest: $--color-gray-900;
+$color-neutral-extra-dark: $--color-gray-1000;
+
+/* -----------------------------------------------------------------
+Transparent white colors */
+
+$color-transparent-white-extra-light: $--color-transparent-white-90;
+$color-transparent-white-lighter: $--color-transparent-white-80;
+$color-transparent-white-light: $--color-transparent-white-70;
+$color-transparent-white-light-medium: $--color-transparent-white-60;
+$color-transparent-white: $--color-transparent-white-50;
+$color-transparent-white-dark-medium: $--color-transparent-white-40;
+$color-transparent-white-dark: $--color-transparent-white-30;
+$color-transparent-white-darker: $--color-transparent-white-20;
+$color-transparent-white-darkest: $--color-transparent-white-10;
+$color-transparent-white-extra-dark: $--color-transparent-white-5;
+
+/* -----------------------------------------------------------------
+Transparent black colors */
+
+$color-transparent-black-extra-light: $--color-transparent-black-90;
+$color-transparent-black-lighter: $--color-transparent-black-80;
+$color-transparent-black-light: $--color-transparent-black-70;
+$color-transparent-black-light-medium: $--color-transparent-black-60;
+$color-transparent-black: $--color-transparent-black-50;
+$color-transparent-black-dark-medium: $--color-transparent-black-40;
+$color-transparent-black-dark: $--color-transparent-black-30;
+$color-transparent-black-darker: $--color-transparent-black-20;
+$color-transparent-black-darkest: $--color-transparent-black-10;
+$color-transparent-black-extra-dark: $--color-transparent-black-5;
+
+
+/* Spacer*/
+
+/* -----------------------------------------------------------------
+This 'spacer' values used specifically to define height 
+and width. It should be used for margins , padding and border redius.
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+$spacer-0 : $--spacer-0;
+$spacer-1 : $--spacer-1;
+$spacer-2 : $--spacer-2;
+$spacer-3 : $--spacer-3;
+$spacer-4 : $--spacer-4;
+$spacer-5 : $--spacer-5;
+$spacer-6 : $--spacer-6;
+$spacer-7 : $--spacer-7;
+$spacer-8 : $--spacer-8;
+$spacer-9 : $--spacer-9;
+$spacer-10 : $--spacer-10;
+$spacer-11 : $--spacer-11;
+$spacer-12 : $--spacer-12;
+$spacer-13 : $--spacer-13;
+$spacer-14 : $--spacer-14;
+$spacer-15 : $--spacer-15;
+$spacer-16 : $--spacer-16;
+$spacer-17 : $--spacer-17;
+$spacer-18 : $--spacer-18;
+$spacer-19 : $--spacer-19;
+$spacer-20 : $--spacer-20;
+
+/* Percentage size*/
+
+/* -----------------------------------------------------------------
+This 'size' values used specifically to define height 
+and width. It should not be used for margins or padding.
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+$size-0: $--size-0;
+$size-5: $--size-5;
+$size-10: $--size-10;
+$size-15: $--size-15;
+$size-20: $--size-20;
+$size-25: $--size-25;
+$size-30: $--size-30;
+$size-35: $--size-35;
+$size-40: $--size-40;
+$size-45: $--size-45;
+$size-50: $--size-50;
+$size-55: $--size-55;
+$size-60: $--size-60;
+$size-65: $--size-65;
+$size-70: $--size-70;
+$size-75: $--size-75;
+$size-80: $--size-80;
+$size-85: $--size-85;
+$size-90: $--size-90;
+$size-95: $--size-95;
+$size-100: $--size-100;

@@ -1,0 +1,87 @@
+
+/* card */
+.card {
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: $spacer-6 !important;
+    word-wrap: break-word !important;
+    text-decoration: none;
+    height: 100%;
+    align-items: stretch;
+    flex: 1;
+
+    .card-body {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: $spacer-9 !important;
+        gap: $spacer-8 !important;
+        flex-grow: 1;
+    }
+
+    .card-title {
+        font-size: $font-size-h4 !important;
+        line-height: 1.3;
+        margin: 0 !important;
+    }
+
+    .card-title-sm {
+        font-size: $font-size-h6 !important;
+        margin: 0 !important;
+    }
+
+    .card-subtitle {
+        font-size: $font-size-body !important;
+        text-transform: uppercase !important;
+        margin: 0 !important;
+    }
+
+    .card-text {
+        font-size: $font-size-body !important;
+        margin: 0 !important;
+        color: $color-neutral-dark-medium;
+    }
+
+    .card-img-top {
+        border-top-left-radius: $spacer-6 !important;
+        border-top-right-radius: $spacer-6 !important;
+        width: $size-100 !important;
+    }
+
+    &.transparent-card {
+        color: $color-white !important;
+        background-color: rgba(255, 255, 255, 0.007) !important;
+        border: 2px solid #d0efff62 !important;
+
+        p {
+            color: $color-transparent-white-light-medium !important;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.051) !important;
+        }
+    }
+
+    &.white-card {
+        color: $color-neutral-darker !important;
+        background-color: $color-white !important;
+        border: 2px solid #ff8c0a !important;
+    }
+
+    &.pricing-card {
+        background-color: rgb(252, 253, 255) !important;
+        border: 2px solid #e9f5fce1 !important;
+    }
+
+    &.grey-card{
+        background-color: rgb(247, 247, 247) !important;
+        border: 2px solid #ffe1a5 !important;
+    }
+
+    &.card-h-40 {
+        height: 40% !important;
+    }
+
+    &.card-h-33 {
+        height: 33% !important;
+    }
+}

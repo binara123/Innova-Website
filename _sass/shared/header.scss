@@ -1,0 +1,163 @@
+@import "../variables";
+
+.navigation-bar{
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+}
+
+.navigation-bar {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.navbar-nav {
+    .nav-link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-weight: $font-weight-medium;
+        transition: color 0.3s ease;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            transform: scaleX(0);
+            background: $color-primary;
+            transition: transform 0.7s cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        // Hover state only applies to the specific link hovered
+        &:hover {
+            color: $color-primary;
+            
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+
+        &.active {
+            color: $color-primary;
+
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.dropdown-toggle {
+    color: $color-primary;
+}
+
+/* Define the animation for sliding right */
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+/* dropdown */
+.dropdown-menu {
+    border: 1px solid $color-neutral-extra-light !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.25rem 0.75rem !important;
+    .dropdown-item {
+        transform: translateX(0);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+    &:hover {
+        animation: slideRight 0.3s ease-out forwards;
+        background-color: transparent;
+    }
+
+    &:focus {
+        background-color: transparent;
+    }
+
+    &:active {
+        color: $color-primary !important;
+    }
+    }
+
+    .ph {
+        font-size: 1.125rem !important;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-fixed {
+    padding: 2px 0;
+    border-bottom: 2px solid $color-neutral-lighter;
+    .sub-nav {
+        display: none !important;
+    }
+}
+
+.nav-section-dark {
+    color: $color-transparent-white-light !important;
+    background-color: transparent;
+
+    .sub-nav {
+        .animation-link{
+            a,
+            .ph {
+              color: $color-transparent-white-light;
+            }
+
+            &:hover {
+                a,
+                .ph {
+                  color: $color-primary;
+                }
+            }
+        }
+
+    }
+
+    .navbar-toggler{
+        border: 2px solid $color-white;
+        background-color: $color-transparent-white-light;
+
+        &:focus {
+            box-shadow: white;
+        }
+    }
+}
+
+.nav-section-light {
+    color: $color-black !important;
+    background-color: $color-white !important;
+}
+
+.on-light-bg {
+    background-color: #ffffff;
+}
+
+.navbar {
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

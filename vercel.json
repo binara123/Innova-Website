@@ -1,0 +1,9 @@
+{
+  "build": {
+    "command": "jekyll build",
+    "output": "_site"
+  },
+  "env": {
+    "RUBY_VERSION": "3.3.6"
+  }
+} 

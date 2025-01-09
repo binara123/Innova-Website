@@ -1,0 +1,97 @@
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* Sticky Content */
+    .sticky-xl-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        z-index: 0;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .after-sticky-content {
+        margin-top: -20rem;
+    }
+
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /* nav bar */
+    .navigation-bar {
+        .sub-nav {
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            margin-top: $spacer-2;
+        }
+
+        &.nav-section-dark {
+            background-color: #18120e;
+        }
+    }
+
+    .w-60 {
+        width: 100% !important;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    h2 {
+        font-size: 2.488rem !important;
+    }
+
+    h3 {
+        font-size: 2.074rem !important;
+    }
+
+    h4 {
+        font-size: 1.728rem !important;
+    }
+
+    h5 {
+        font-size: 1.44rem !important;
+    }
+
+    h6 {
+        font-size: 1.2rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    .font-lg {
+        font-size: 0.875rem !important;
+
+    }
+
+    .font-md {
+        font-size: 0.75rem !important;
+    }
+
+    .font-sm {
+        font-size: 0.625rem !important
+    }
+
+    .font-xs {
+        font-size: 0.563rem !important;
+    }
+
+    /* To wrap items */
+    .item-wrapper {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .feature-card {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,344 @@
+@import 'variables';
+
+// margin
+@mixin margin($spacer) {
+  margin: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .m-#{$i} {
+    @include margin($i);
+  }
+}
+
+/* margin Top */
+@mixin marginTop($spacer) {
+  margin-top: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .mt-#{$i} {
+    @include marginTop($i);
+  }
+}
+
+/* margin Bottom */
+@mixin marginBottom($spacer) {
+  margin-bottom: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .mb-#{$i} {
+    @include marginBottom($i);
+  }
+}
+
+/* margin Right */
+@mixin marginRight($spacer) {
+  margin-right: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .mr-#{$i} {
+    @include marginRight($i);
+  }
+}
+
+/* margin Left */
+@mixin marginLeft($spacer) {
+  margin-left: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .ml-#{$i} {
+    @include marginLeft($i);
+  }
+}
+
+/* margin Left Right */
+@mixin marginHorizontal($spacer) {
+  margin-left: #{'$spacer-' + $spacer};
+  margin-right: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .mx-#{$i} {
+    @include marginHorizontal($i);
+  }
+}
+
+/* margin Top Bottom */
+@mixin marginVertical($spacer) {
+  margin-top: #{'$spacer-' + $spacer};
+  margin-bottom: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .my-#{$i} {
+    @include marginVertical($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most importnant set of tokens are the padding spacing values. 
+These spacing values define rem. This logics Included all padding values. 
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+/* padding */
+@mixin padding($spacer) {
+  padding: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .p-#{$i} {
+    @include padding($i);
+  }
+}
+
+/* Padding Top */
+@mixin paddingTop($spacer) {
+  padding-top: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .pt-#{$i} {
+    @include paddingTop($i);
+  }
+}
+
+/* Padding Bottom */
+@mixin paddingBottom($spacer) {
+  padding-bottom: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .pb-#{$i} {
+    @include paddingBottom($i);
+  }
+}
+
+/* Padding Right */
+@mixin paddingRight($spacer) {
+  padding-right: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .pr-#{$i} {
+    @include paddingRight($i);
+  }
+}
+
+/* Padding Left */
+@mixin paddingLeft($spacer) {
+  padding-left: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .pl-#{$i} {
+    @include paddingLeft($i);
+  }
+}
+
+/* Padding Left and Right */
+@mixin paddingHorizontal($spacer) {
+  padding-left: #{'$spacer-' + $spacer};
+  padding-right: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .px-#{$i} {
+    @include paddingHorizontal($i);
+  }
+}
+
+/* Padding Top and Bottom */
+@mixin paddingVertical($spacer) {
+  padding-top: #{'$spacer-' + $spacer};
+  padding-bottom: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 20 {
+  .py-#{$i} {
+    @include paddingVertical($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most importnant set of tokens are the border radius values. 
+These border radius values define rem.
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+@mixin borderRadius($spacer) {
+  border-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-#{$i} {
+    @include borderRadius($i);
+  }
+}
+
+/* border redius top left */
+@mixin borderRadiusTopLeft($spacer) {
+  border-top-left-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-tl-#{$i} {
+    @include borderRadiusTopLeft($i);
+  }
+}
+
+/* border radius top right */
+@mixin borderRadiusTopRight($spacer) {
+  border-top-right-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-tr-#{$i} {
+    @include borderRadiusTopRight($i);
+  }
+}
+
+/* border radius bottom Left */
+@mixin borderRadiusBottomLeft($spacer) {
+  border-bottom-left-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-bl-#{$i} {
+    @include borderRadiusBottomLeft($i);
+  }
+}
+
+/* border radius bottom right */
+@mixin borderRadiusBottomRight($spacer) {
+  border-bottom-right-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-br-#{$i} {
+    @include borderRadiusBottomRight($i);
+  }
+}
+
+/* border radius top */
+@mixin borderRadiusTop($spacer) {
+  border-top-left-radius: #{'$spacer-' + $spacer};
+  border-top-right-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-t-#{$i} {
+    @include borderRadiusTop($i);
+  }
+}
+
+/* border radius bottom */
+@mixin borderRadiusBottom($spacer) {
+  border-bottom-left-radius: #{'$spacer-' + $spacer};
+  border-bottom-right-radius: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .rounded-b-#{$i} {
+    @include borderRadiusBottom($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most importnant set of tokens are the gap values. 
+These gap values define rem.
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+@mixin gap($spacer) {
+  gap: #{'$spacer-' + $spacer};
+}
+
+@for $i from 0 through 10 {
+  .gap-#{$i} {
+    @include gap($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most importnant set of tokens are the Presentage sizing values. 
+These sizing values define precentage. This logics Included all width values. 
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+@mixin width($size) {
+  width: #{'$size-' + $size*5};
+}
+
+@for $i from 0 through 20 {
+  .w-#{$i*5} {
+    @include width($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most importnant set of tokens are the Presentage sizing values. 
+These sizing values define precentage. This logics Included all hight values. 
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+@mixin height($size) {
+  height: #{'$size-' + $size*5};
+}
+
+@for $i from 0 through 20 {
+  .h-#{$i*5} {
+    @include height($i);
+  }
+}
+
+/* -----------------------------------------------------------------
+One of the most important set of tokens are the gutter values.
+These gutter values define rem.
+
+* DON'T CHANGE ❌
+----------------------------------------------------------------- */
+
+/*gutter horizontal*/
+@mixin gutter-x($size) {
+  padding-right: $size * 0.5rem;
+  padding-left: $size * 0.5rem;
+}
+
+@for $i from 0 through 10 {
+  .gx-#{$i} > * {
+    @include gutter-x($i);
+  }
+  .gx-#{$i} > *:first-child {
+    padding-left: 0;
+  }
+  .gx-#{$i} > *:last-child {
+    padding-right: 0;
+  }
+}
+
+/*gutter vertical*/
+@mixin gutter-y($size) {
+  padding-top: $size * 0.5rem;
+  padding-bottom: $size * 0.5rem;
+}
+
+@for $i from 0 through 10 {
+  .gy-#{$i} > * {
+    @include gutter-y($i);
+  }
+  .gy-#{$i} > *:first-child {
+    padding-left: 0;
+  }
+  .gy-#{$i} > *:last-child {
+    padding-right: 0;
+  }
+}

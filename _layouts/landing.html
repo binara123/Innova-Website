@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+    {% include head.html %}
+</head>
+<body>
+{% if page.light_header %}
+{% include nav-on-light-bg.html %}
+{% else %}
+{% include nav-on-dark-bg.html %}
+{% endif %}
+{{ content }}
+{% include footer.html %}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- And put your own code after - any GSAP code you write needs to have access to the library -->
+<script src="/js/custom.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+
+        // Scroll event for navigation bar style change
+        window.addEventListener('scroll', function () {
+            const navBar = document.querySelector('.navigation-bar');
+            const logo = document.querySelector('.navbar-brand img');
+            const onLightBg = navBar.classList.contains('on-light-bg');
+
+            if (window.scrollY > 70) {
+                navBar.classList.add('nav-fixed');
+                navBar.classList.add('nav-section-light');
+                logo.src = '/img/site-logo/orange-logo.svg';
+            } else {
+                navBar.classList.remove('nav-fixed');
+                navBar.classList.remove('nav-section-light');
+                if (onLightBg) {
+                    logo.src = '/img/site-logo/orange-logo.svg';
+                } else {
+                    logo.src = '/img/site-logo/orange-logo.svg';
+                }
+            }
+        });
+
+        // Fade-in and fade-in-up animations on scroll
+        const fadeInElements = document.querySelectorAll('.fade-in, .fade-in-up');
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('fade-in', 'fade-in-up');
+                    entry.target.classList.add(entry.target.dataset.animationClass);
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        fadeInElements.forEach(element => {
+            element.style.opacity = 0;
+            element.style.animationPlayState = 'paused';
+            element.dataset.animationClass = element.classList.contains('fade-in-up') ? 'fade-in-up' : 'fade-in';
+            observer.observe(element);
+        });
+    });
+</script>
+</body>
+</html>

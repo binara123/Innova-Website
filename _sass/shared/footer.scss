@@ -1,0 +1,43 @@
+.free-trial-box {
+    background-image: url(../../../img/site-image/free-trial-box.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+// animation link
+.footer-animation-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-primary-extra-light;
+    font-weight: 500;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        transform: scaleX(0);
+        background: $color-primary;
+        transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+    }
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+
+}
+
+.footer-image{
+    background-image: url(../../../img/site-image/footer-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}

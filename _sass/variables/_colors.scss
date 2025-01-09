@@ -1,0 +1,143 @@
+// Grayscale Colors
+$--color-white: #ffffff;
+$--color-black: #000000;
+
+$--color-light: #f8f9fa;
+$--color-dark: #343a40;
+
+$--color-gray-100: #f6f6f6;
+$--color-gray-200: #e7e7e7;
+$--color-gray-300: #d1d1d1;
+$--color-gray-400: #b0b0b0;
+$--color-gray-500: #888888;
+$--color-gray-600: #6d6d6d;
+$--color-gray-700: #5d5d5d;
+$--color-gray-800: #383737;
+$--color-gray-900: #282828;
+$--color-gray-1000: #111111;
+
+$--color-tangerine-1000: #461904;
+$--color-tangerine-900: #82370c;
+$--color-tangerine-800: #a1400b;
+$--color-tangerine-700: #cc5302;
+$--color-tangerine-600: #ff7300;
+$--color-tangerine-500: #ff8c0a;
+$--color-tangerine-400: #ffa732;
+$--color-tangerine-300: #ffca6d;
+$--color-tangerine-200: #ffe1a5;
+$--color-tangerine-100: #fff2d3;
+$--color-tangerine-50: #fff9ec;
+$--color-tangerine-0: #fff8f2;
+
+$--color-dogerblue-1000: #001830;
+$--color-dogerblue-900: #00305F;
+$--color-dogerblue-800: #00488F;
+$--color-dogerblue-700: #0060BE;
+$--color-dogerblue-600: #0078EE;
+$--color-dogerblue-500: #1e90ff;
+$--color-dogerblue-400: #43A3FF;
+$--color-dogerblue-300: #69B5FF;
+$--color-dogerblue-200: #8fc7ff;
+$--color-dogerblue-100: #B4DAFF;
+$--color-dogerblue-50: #DAEDFF;
+$--color-dogerblue-0: #f2f8ff;
+
+$--color-merigold-1000: #2B1C02;
+$--color-merigold-900: #563805;
+$--color-merigold-800: #815507;
+$--color-merigold-700: #AB710A;
+$--color-merigold-600: #d68d0c;
+$--color-merigold-500: #f2a51e;
+$--color-merigold-400: #f4b03a;
+$--color-merigold-300: #F6C369;
+$--color-merigold-200: #F9D28E;
+$--color-merigold-100: #FBE1B4;
+$--color-merigold-50: #FDF0DA;
+$--color-merigold-0: #fefaf2;
+
+$--color-spruce-1000: #070A0D;
+$--color-spruce-900: #0F1519;
+$--color-spruce-800: #161F26;
+$--color-spruce-700: #1d2933;
+$--color-spruce-600: #25343f;
+$--color-spruce-500: #2c3e4c;
+$--color-spruce-400: #5c819e;
+$--color-spruce-300: #7E9DB3;
+$--color-spruce-200: #98B1C3;
+$--color-spruce-100: #ADC0CF;
+$--color-spruce-50: #D6E0E7;
+$--color-spruce-0: #f3f4f4;
+
+$--color-parakeet-1000: #00200C;
+$--color-parakeet-900: #014019;
+$--color-parakeet-800: #016025;
+$--color-parakeet-700: #028031;
+$--color-parakeet-600: #02a03e;
+$--color-parakeet-500: #03c04a;
+$--color-parakeet-400: #04f45e;
+$--color-parakeet-300: #30FC7D;
+$--color-parakeet-200: #64FD9D;
+$--color-parakeet-100: #98FDBE;
+$--color-parakeet-50: #CBFEDE;
+
+$--color-rose-1000: #270506;
+$--color-rose-900: #4E0A0C;
+$--color-rose-800: #750F13;
+$--color-rose-700: #9B1419;
+$--color-rose-600: #c2191f;
+$--color-rose-500: #e3242b;
+$--color-rose-400: #e8494e;
+$--color-rose-300: #F19195;
+$--color-rose-200: #F19195;
+$--color-rose-100: #F19195;
+$--color-rose-50: #FADBDC;
+
+$--color-aliceblue-1100: #001d36;
+$--color-aliceblue-1000: #002c52;
+$--color-aliceblue-900: #0058A5;
+$--color-aliceblue-800: #0084F8;
+$--color-aliceblue-700: #4BABFF;
+$--color-aliceblue-600: #9ED2FF;
+$--color-aliceblue-500: #f0f8ff;
+$--color-aliceblue-400: #F3F9FF;
+$--color-aliceblue-300: #F5FAFF;
+$--color-aliceblue-200: #F5FAFF;
+$--color-aliceblue-100: #FAFDFF;
+$--color-aliceblue-50: #FDFEFF;
+
+$--color-vividskyblue-1000: #00222A;
+$--color-vividskyblue-900: #004455;
+$--color-vividskyblue-800: #006680;
+$--color-vividskyblue-700: #0088AA;
+$--color-vividskyblue-600: #00AAD5;
+$--color-vividskyblue-500: #00CCFF;
+$--color-vividskyblue-400: #2BD4FF;
+$--color-vividskyblue-300: #55DDFF;
+$--color-vividskyblue-200: #80E5FF;
+$--color-vividskyblue-100: #AAEEFF;
+$--color-vividskyblue-50: #D5F7FF;
+$--color-vividskyblue-0: #f1fbff;
+
+$--color-transparent-white-5: rgba(255, 255, 255, 0.05);
+$--color-transparent-white-10: rgba(255, 255, 255, 0.10);
+$--color-transparent-white-20: rgba(255, 255, 255, 0.20);
+$--color-transparent-white-30: rgba(255, 255, 255, 0.30);
+$--color-transparent-white-40: rgba(255, 255, 255, 0.40);
+$--color-transparent-white-50: rgba(255, 255, 255, 0.50);
+$--color-transparent-white-60: rgba(255, 255, 255, 0.60);
+$--color-transparent-white-70: rgba(255, 255, 255, 0.70);
+$--color-transparent-white-80: rgba(255, 255, 255, 0.80);
+$--color-transparent-white-90: rgba(255, 255, 255, 0.90);
+$--color-transparent-white-95: rgba(255, 255, 255, 0.95);
+
+$--color-transparent-black-5: rgba(0, 0, 0, 0.05);
+$--color-transparent-black-10: rgba(0, 0, 0, 0.10);
+$--color-transparent-black-20: rgba(0, 0, 0, 0.20);
+$--color-transparent-black-30: rgba(0, 0, 0, 0.30);
+$--color-transparent-black-40: rgba(0, 0, 0, 0.40);
+$--color-transparent-black-50: rgba(0, 0, 0, 0.50);
+$--color-transparent-black-60: rgba(0, 0, 0, 0.60);
+$--color-transparent-black-70: rgba(0, 0, 0, 0.70);
+$--color-transparent-black-80: rgba(0, 0, 0, 0.80);
+$--color-transparent-black-90: rgba(0, 0, 0, 0.90);
+$--color-transparent-black-95: rgba(0, 0, 0, 0.95);

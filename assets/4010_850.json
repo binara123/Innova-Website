@@ -1,0 +1,213 @@
+{
+    "lineItems": [
+        {
+            "reqFlag": "M",
+            "mandatory": true,
+            "name": "ST",
+            "maxUseFlag": "1",
+            "open": true,
+            "level": 0,
+            "style": "show",
+            "type": "S"
+        },
+        {
+            "reqFlag": "M",
+            "mandatory": true,
+            "name": "BEG",
+            "type": "S",
+            "level": 0,
+            "maxUseFlag": "1",
+            "open": true,
+            "style": "show"
+        },
+        {
+            "type": "S",
+            "reqFlag": "O",
+            "maxUseFlag": ">1",
+            "style": "show",
+            "open": true,
+            "mandatory": false,
+            "level": 0,
+            "name": "REF"
+        },
+        {
+            "maxUseFlag": "3",
+            "name": "PER",
+            "level": 0,
+            "style": "show",
+            "type": "S",
+            "open": true,
+            "mandatory": false,
+            "reqFlag": "O"
+        },
+        {
+            "level": 0,
+            "maxUseFlag": "1",
+            "style": "show",
+            "reqFlag": "O",
+            "name": "ITD",
+            "mandatory": false,
+            "open": true,
+            "type": "S"
+        },
+        {
+            "mandatory": true,
+            "reqFlag": "O",
+            "name": "DTM",
+            "type": "S",
+            "style": "show",
+            "level": 0,
+            "maxUseFlag": "10",
+            "open": true
+        },
+        {
+            "repeatFlag": "1000",
+            "mandatory": false,
+            "level": 0,
+            "name": "N9",
+            "style": "show",
+            "type": "L",
+            "open": true
+        },
+        {
+            "style": "show",
+            "reqFlag": "O",
+            "mandatory": false,
+            "open": true,
+            "level": 1,
+            "maxUseFlag": "1",
+            "type": "S",
+            "name": "N9"
+        },
+        {
+            "name": "MSG",
+            "maxUseFlag": "1000",
+            "reqFlag": "O",
+            "style": "show",
+            "open": true,
+            "type": "S",
+            "mandatory": false,
+            "level": 1
+        },
+        {
+            "type": "L",
+            "name": "N1",
+            "open": true,
+            "mandatory": true,
+            "repeatFlag": "200",
+            "style": "show",
+            "level": 0
+        },
+        {
+            "name": "N1",
+            "level": 1,
+            "open": true,
+            "reqFlag": "O",
+            "type": "S",
+            "maxUseFlag": "1",
+            "mandatory": true,
+            "style": "show"
+        },
+        {
+            "name": "N2",
+            "maxUseFlag": "2",
+            "open": true,
+            "mandatory": false,
+            "reqFlag": "O",
+            "level": 1,
+            "style": "show",
+            "type": "S"
+        },
+        {
+            "reqFlag": "O",
+            "level": 1,
+            "open": true,
+            "type": "S",
+            "maxUseFlag": "2",
+            "style": "show",
+            "mandatory": true,
+            "name": "N3"
+        },
+        {
+            "name": "N4",
+            "maxUseFlag": ">1",
+            "reqFlag": "O",
+            "type": "S",
+            "level": 1,
+            "style": "show",
+            "mandatory": true,
+            "open": true
+        },
+        {
+            "style": "show",
+            "name": "PO1",
+            "open": true,
+            "type": "L",
+            "repeatFlag": "100000",
+            "mandatory": true,
+            "level": 0
+        },
+        {
+            "level": 1,
+            "mandatory": true,
+            "maxUseFlag": "1",
+            "style": "show",
+            "open": true,
+            "type": "S",
+            "reqFlag": "M",
+            "name": "PO1"
+        },
+        {
+            "level": 1,
+            "name": "PID",
+            "reqFlag": "O",
+            "mandatory": false,
+            "maxUseFlag": "1",
+            "type": "S",
+            "style": "show",
+            "open": true
+        },
+        {
+            "style": "show",
+            "type": "S",
+            "maxUseFlag": ">1",
+            "reqFlag": "O",
+            "mandatory": false,
+            "name": "REF",
+            "level": 1,
+            "open": true
+        },
+        {
+            "type": "L",
+            "repeatFlag": "1",
+            "level": 0,
+            "style": "show",
+            "mandatory": false,
+            "name": "CTT",
+            "open": true
+        },
+        {
+            "style": "show",
+            "reqFlag": "O",
+            "mandatory": false,
+            "open": true,
+            "level": 1,
+            "name": "CTT",
+            "maxUseFlag": "1",
+            "type": "S"
+        },
+        {
+            "reqFlag": "M",
+            "style": "show",
+            "open": true,
+            "mandatory": true,
+            "name": "SE",
+            "maxUseFlag": "1",
+            "type": "S",
+            "level": 0
+        }
+    ],
+    "docType": "850",
+    "docName": "4010-850",
+    "docVersion": "4010"
+}
